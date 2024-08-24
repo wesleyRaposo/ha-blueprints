@@ -13,14 +13,6 @@ Por meios normais, isso seria feito com quatro automações diferentes monitoran
 
 Você poderá encontrar outras utilidades particulares para sua automação.
 
-**REGISTRO DE ALTERAÇÕES:**
-  - **1.0**: (2024-08-23)
-    - Primeiro lançamento oficial
-	
-**Fonte:**
-[![alexdelprete - ha-blueprints](https://img.shields.io/static/v1?label=alexdelprete&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-lblueprint-inked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/alexdelprete/ha-blueprints?style=social)](https://github.com/alexdelprete/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/alexdelprete/ha-blueprints?style=social)](https://github.com/alexdelprete/ha-blueprints)
-
-
 -----------
 
 This blueprint allows you to easily create/maintain an automation that links the state of two entities, keeping them in opposite states:
@@ -35,4 +27,11 @@ Normally, this would be done with four separate automations monitoring the on an
 
 You may find other particular uses for your automation.
 
-**CHANGE RECORD:** - **1.0**: (2024-08-23) - First official release **Source:** [![alexdelprete - ha-blueprints](https://img.shields.io/static/v1?label=alexdelprete&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprint s/blob/main/ha-lblueprint-inked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/alexdelprete/ha-blueprints?style=social)](https://github.com/alexdelprete/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/alexdelprete/ha-blueprints?style=social)](https://github.com/alexdelprete/ha-blueprints)
+-----------
+
+**REGISTRO DE ALTERAÇÕES / CHANGELOG:**
+  - **1.0**: (2024-08-23)
+    - Primeiro lançamento oficial
+	
+**Fonte / Source:**
+[![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=alexdelprete&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
