@@ -1,6 +1,6 @@
 ***Linked On-Off v1.0***
 
-[![Abra sua instância do Home Assistant e mostre a caixa de diálogo de importação do blueprint com um blueprint específico pré-preenchido.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2wesleyRaposo%2Fha-blueprints%2Fmain%2Fha-blueprint-linked-on-off.yaml)
+[![Abra sua instância do Home Assistant e mostre a caixa de diálogo de importação do blueprint com um blueprint específico pré-preenchido.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FwesleyRaposo%2Fha-blueprints%2Fblob%2Fmain%2Fha-blueprint-linked-on-off.yaml)
 
 Este blueprint permite que você crie/mantenha facilmente uma automação que vincula o estado de duas entidades, mantendo-as em estados opostos:
 - LIGUE uma entidade vinculada e isso DESLIGARÁ a outra entidade vinculada.
