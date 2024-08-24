@@ -1,0 +1,89 @@
+blueprint:
+  name: Linked On-Off
+  description: ""
+  domain: automation
+  input:
+    linked_on_off_A:
+      name: Linked On-Off A
+      description: Entities whose state and boolean attributes will be inversely linked (if one of them goes to the ON state, the other will go OFF).
+      selector:
+        entity:
+          multiple: false
+    linked_on_off_B:
+      name: Linked On-Off B
+      description: Entities whose state and boolean attributes will be inversely linked (if one of them goes to the ON state, the other will go OFF).
+      selector:
+        entity:
+          multiple: false
+  source_url: https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-lblueprint-inked-on-off.yaml
+mode: single
+max_exceeded: silent
+variables:
+  linked_on_of_entities_A: !input linked_on_off_A
+  linked_on_of_entities_B: !input linked_on_off_B
+  
+trigger:
+- platform: state
+  id: turn_on_A
+  entity_id: !input linked_on_off_A
+  from: 'off'
+  to: 'on'
+- platform: state
+  id: turn_off_A
+  entity_id: !input linked_on_off_A
+  from: 'on'
+  to: 'off'
+
+- platform: state
+  id: turn_on_B
+  entity_id: !input linked_on_off_B
+  from: 'off'
+  to: 'on'
+- platform: state
+  id: turn_off_B
+  entity_id: !input linked_on_off_B
+  from: 'on'
+  to: 'off'
+
+action:
+- choose:
+  - conditions:
+    - condition: trigger
+      id: turn_on_A
+    sequence:
+    - service: homeassistant.turn_off
+      target:
+        entity_id: !input linked_on_off_B
+    - delay:
+        milliseconds: 200
+        
+  - conditions:
+    - condition: trigger
+      id: turn_off_A
+    sequence:
+    - service: homeassistant.turn_on
+      target:
+        entity_id: !input linked_on_off_B
+    - delay:
+        milliseconds: 200
+
+  - conditions:
+    - condition: trigger
+      id: turn_on_B
+    sequence:
+    - service: homeassistant.turn_off
+      target:
+        entity_id: !input linked_on_off_A
+    - delay:
+        milliseconds: 200
+        
+  - conditions:
+    - condition: trigger
+      id: turn_off_B
+    sequence:
+    - service: homeassistant.turn_on
+      target:
+        entity_id: !input linked_on_off_A
+    - delay:
+        milliseconds: 200
+
