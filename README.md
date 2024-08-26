@@ -35,3 +35,39 @@ You may find other particular uses for your automation.
 	
 **Fonte / Source:**
 [![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=alexdelprete&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
+
+-----------
+
+***Linked Only One On v1.0***
+
+[![Abra sua instância do Home Assistant e mostre a caixa de diálogo de importação do blueprint com um blueprint específico pré-preenchido.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FwesleyRaposo%2Fha-blueprints%2Fblob%2Fmain%2Fha-blueprint-linked-only-one-on.yaml)
+
+Este blueprint permite que você crie/mantenha facilmente uma automação que vincula o estado de várias entidades, mantendo-as em estados opostos:
+- LIGUE uma entidade vinculada e isso DESLIGARÁ todas as outras entidades vinculadas.
+
+**NOTA**: Você pode selecionar qualquer entidade que tenha os estados LIGADO/DESLIGADO (interruptores, luzes, etc.).
+
+Este blueprint é uma evolução do "Linked On-Off", que vincula apenas duas entidades, e o propósito é similar: automatizar de forma simples entidades que precisam ser mutuamente exclusivas. Entretanto, essa automação permite que apenas uma entidade do grupo fique ligada por vez.
+
+Você poderá encontrar outras utilidades particulares para sua automação.
+
+-----------
+
+This blueprint allows you to easily create/maintain an automation that links the state of multiple entities, keeping them in opposite states:
+- Turn ON a linked entity and this will turn OFF all other linked entities.
+
+**NOTE**: You can select any entity that has the ON/OFF states (switches, lights, etc.).
+
+This blueprint is an evolution of the "Linked On-Off" blueprint, which links only two entities, and the purpose is similar: to easily automate entities that need to be mutually exclusive. However, this automation allows only one entity in the group to be on at a time.
+
+You may find other particular uses for your automation.
+
+-----------
+
+**REGISTRO DE ALTERAÇÕES / CHANGELOG:**
+  - **1.0**: (2024-08-23)
+    - Primeiro lançamento oficial
+	
+**Fonte / Source:**
+[![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=alexdelprete&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
+
