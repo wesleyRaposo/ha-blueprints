@@ -34,7 +34,7 @@ You may find other particular uses for your automation.
     - Primeiro lançamento oficial
 	
 **Fonte / Source:**
-[![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=alexdelprete&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
+[![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=wesleyRaposo&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
 
 -----------
 
@@ -69,5 +69,5 @@ You may find other particular uses for your automation.
     - Primeiro lançamento oficial
 	
 **Fonte / Source:**
-[![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=alexdelprete&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/alexdelprete/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
+[![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=wesleyRaposo&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-on-off.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
 
