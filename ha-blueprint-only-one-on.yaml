@@ -10,7 +10,7 @@ blueprint:
         entity:
           multiple: true
           
-  source_url: https://raw.githubusercontent.com/alexdelprete/ha-blueprints/main/ha-blueprint-linked-entities.yaml
+  source_url: https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-only-one-on.yaml
 mode: single
 max_exceeded: silent
 variables:
