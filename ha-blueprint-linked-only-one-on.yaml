@@ -1,0 +1,51 @@
+blueprint:
+  name: Linked Only One On
+  description: ""
+  domain: automation
+  input:
+    linked_only_one_on:
+      name: Linked Only One On
+      description: Entities whose state and boolean attributes will be inversely linked (if one of them goes to the ON state, all the others will be OFF).
+      selector:
+        entity:
+          multiple: true
+          
+  source_url: https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-only-one-on.yaml
+mode: single
+max_exceeded: silent
+variables:
+  linked_only_one_on_entities: !input linked_only_one_on
+  
+trigger:
+- platform: state
+  id: turn_on
+  entity_id: !input linked_only_one_on
+  from: 'off'
+  to: 'on'
+- platform: state
+  id: turn_off
+  entity_id: !input linked_only_one_on
+  from: 'on'
+  to: 'off'
+
+action:
+- choose:
+  - conditions:
+    - condition: trigger
+      id: turn_on
+    sequence:
+    - service: homeassistant.turn_off
+      target:
+        entity_id: !input linked_only_one_on
+    - delay:
+        milliseconds: 200
+        
+  - conditions:
+    - condition: trigger
+      id: turn_off
+    sequence:
+    - service: homeassistant.turn_on
+      target:
+        entity_id: !input linked_only_one_on
+    - delay:
+        milliseconds: 200
