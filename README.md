@@ -97,6 +97,8 @@ From it, you can set the following parameters:
 
 The generated scripts can be used in automations.
 
+<img width="583" height="881" alt="image" src="https://github.com/user-attachments/assets/4f55d9f3-b58d-4f5b-a5fd-bc0d58037127" />
+
 -----------
 
 **REGISTRO DE ALTERAÇÕES / CHANGELOG:**
