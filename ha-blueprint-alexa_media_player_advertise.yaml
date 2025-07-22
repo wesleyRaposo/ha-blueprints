@@ -9,7 +9,7 @@ fields:
   mensagem:
     selector:
       text:
-    name: Mensagem:
+    name: Mensagem
     description: O que será anunciado.
     required: true
     default: Teste    
@@ -20,7 +20,7 @@ fields:
         - integration: alexa_media
           domain: media_player
         multiple: true
-    name: Onde será anunciado:
+    name: Onde será anunciado
     required: true
     default: []
     description: Dispositivo para o qual a mensagem será enviada.
@@ -32,7 +32,7 @@ fields:
         step: 0.1
     default: 0.5
     required: true
-    name: Volume:
+    name: Volume
     description: Volume do anúncio (padrão 50%)
 sequence:
 - action: media_player.volume_set
