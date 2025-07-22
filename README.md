@@ -71,3 +71,37 @@ You may find other particular uses for your automation.
 **Fonte / Source:**
 [![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=wesleyRaposo&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-linked-only-one-on.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
 
+-----------
+
+***Alexa Media Player Advertise v1.0***
+
+[![Abra sua instância do Home Assistant e mostre a caixa de diálogo de importação do blueprint com um blueprint específico pré-preenchido.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FwesleyRaposo%2Fha-blueprints%2Fblob%2Fmain%2Fha-blueprint-alexa_media_player_advertise.yaml)
+
+Este blueprint permite que você crie um script a través do qual poderá enviar mensagens para qualquer dispositivo Echo Dot adicionado na integração "Alexa Media Player".
+
+A partir dele você pode definir os seguintes parâmetros:
+- Mensagem que será falada.
+- Volume da notificação.
+- Em qual dispositivo a notificação será falado (podendo ser em, alguns, todos ou em grupos).
+
+Os scripts gerados poderão ser utilizados em automações.
+
+-----------
+
+This blueprint allows you to create a script that can send messages to any Echo Dot device added to the "Alexa Media Player" integration.
+
+From it, you can set the following parameters:
+- Message to be spoken.
+- Notification volume.
+- On which device the notification will be spoken (selected, all, or groups).
+
+The generated scripts can be used in automations.
+
+-----------
+
+**REGISTRO DE ALTERAÇÕES / CHANGELOG:**
+  - **1.0**: (2025-07-25)
+    - Primeiro lançamento oficial
+	
+**Fonte / Source:**
+[![wesleyRaposo - ha-blueprints](https://img.shields.io/static/v1?label=wesleyRaposo&message=ha-blueprints&color=blue&logo=github)](https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-alexa_media_player_advertise.yaml "Go to GitHub repo") [![stars - ha-blueprints](https://img.shields.io/github/stars/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints) [![forks - ha-blueprints](https://img.shields.io/github/forks/wesleyRaposo/ha-blueprints?style=social)](https://github.com/wesleyRaposo/ha-blueprints)
