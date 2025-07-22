@@ -1,39 +1,64 @@
 blueprint:
   name: Alexa Media Player Advertise
-  description: Envia um anúncio para a caixa Echo selecionada. / Sends an announcement to the selected Echo box.
+  description: Envia um anúncio para o dispositivo Alexa Echo selecionado. / Sends an announcement to the selected Alexa Echo device.
   domain: script
   input: {}
   source_url: https://github.com/wesleyRaposo/ha-blueprints/blob/main/ha-blueprint-alexa_media_player_advertise.yaml
 mode: queued
 fields:
+  tipo_anuncio:
+    name: Estilo
+    description: Anúncio com ou sem som de introdução
+    required: true
+    selector:
+      select:
+        mode: dropdown
+        options:
+        - label: TTS
+          value: tts
+        - label: Announce    
+          value: announce
+        custom_value: false
+        multiple: false
+    default: tts
   mensagem:
+    name: Mensagem
+    description: O texto que será anunciado
+    required: true
     selector:
       text:
-    name: Mensagem
-    description: O que será anunciado.
-    required: true
-    default: Teste    
-  onde_anunciar:
-    selector:
-      entity:
-        filter:
-        - integration: alexa_media
-          domain: media_player
-        multiple: true
-    name: Dispositivo
-    required: true
-    default: []
-    description: Dispositivo para o qual a mensagem será enviada.
+    default: Teste
   volume:
+    name: Volume
+    description: (padrão 50%)
+    required: true
     selector:
       number:
         min: 0.1
         max: 1
         step: 0.1
     default: 0.5
+  duracao:
+    name: Duração
+    description: Tempo de duração da mensagem
     required: true
-    name: Volume
-    description: Volume do anúncio (padrão 50%)
+    selector:
+      number:
+        min: 3
+        max: 20
+        step: 1
+    default: 5
+  onde_anunciar:
+    name: Dispositivo(s)
+    description: Dispositivo(s) ou grupo para o qual a mensagem será enviada
+    required: true
+    selector:
+      entity:
+        filter:
+        - integration: alexa_media
+          domain: media_player
+        multiple: true
+    default: []
 sequence:
 - service: media_player.volume_set
   metadata: {}
@@ -44,18 +69,18 @@ sequence:
 - delay:
     hours: 0
     minutes: 0
-    seconds: 1
-    milliseconds: 0
+    seconds: 0
+    milliseconds: 200
 - service: notify.alexa_media
   data:
     message: '{{ mensagem }}'
     data:
-      type: announce
+      type: '{{ tipo_anuncio }}'
     target: '{{ onde_anunciar }}'
 - delay:
     hours: 0
     minutes: 0
-    seconds: 10
+    seconds: '{{ duracao }}'
     milliseconds: 0
 - service: media_player.volume_set
   metadata: {}
