@@ -20,7 +20,7 @@ fields:
         - integration: alexa_media
           domain: media_player
         multiple: true
-    name: Onde será anunciado
+    name: Dispositivo
     required: true
     default: []
     description: Dispositivo para o qual a mensagem será enviada.
@@ -35,7 +35,7 @@ fields:
     name: Volume
     description: Volume do anúncio (padrão 50%)
 sequence:
-- action: media_player.volume_set
+- service: media_player.volume_set
   metadata: {}
   data:
     volume_level: '{{ volume }}'
@@ -46,7 +46,7 @@ sequence:
     minutes: 0
     seconds: 1
     milliseconds: 0
-- action: notify.alexa_media
+- service: notify.alexa_media
   data:
     message: '{{ mensagem }}'
     data:
@@ -57,7 +57,7 @@ sequence:
     minutes: 0
     seconds: 10
     milliseconds: 0
-- action: media_player.volume_set
+- service: media_player.volume_set
   metadata: {}
   data:
     volume_level: 0.3
